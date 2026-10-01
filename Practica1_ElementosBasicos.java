@@ -41,12 +41,7 @@ public class Practica1_ElementosBasicos {
 		double total = subtotal + subtotal * IVA;
 
 		// Comprobación de descuento
-		boolean discount;
-		if (number > 5 && total > 50.0) {
-			discount = true;
-		} else {
-			discount = false;
-		}
+		boolean discount = (number > 5 && total > 50.0);
 
 		// Puntos de fidelidad
 		int points = (int) (total);
